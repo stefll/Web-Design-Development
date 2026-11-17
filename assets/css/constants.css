@@ -1,0 +1,19 @@
+/*
+ * Constants
+ *
+ * Keep colors and reusable theme values here.
+ */
+:root {
+  --theme-color-primary: #AB1F22;
+  --theme-color-secondary: #072027;
+  --theme-color-base: #F7F2EE;
+
+
+
+  --theme-transition: all 0.3s ease-in-out;
+
+
+  --theme-font-cinzel:"Cinzel Decorative",Arial, sans-serif;
+  --theme-font-raleway: "Raleway", Arial, sans-serif;
+  --theme-font-fodoro: "Federo", Arial,sans-serif; 
+}
