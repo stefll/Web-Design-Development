@@ -1,0 +1,19 @@
+Implement this design from Figma. https://www.figma.com/design/mVOKIb950a3duJRAH3sLNO/Web-Design---Development?node-id=158-275&t=PUu0iLmw8D2matFE-4
+
+Add the new component called "HEADER": in 
+render-page-modules.php as new case. Also make the new php 
+file for it. Add the nessecary fields in the acf json file (+ update 
+the timestamp so it can sync in wordpress). dont implement a new 
+font for it - fall back to the already existing fonts. The Frame "Frame 3" should be a marquee and when goint behind "frame 7" it should start beeing transparent[add more 
+specific prompts if needed]
+
+https://www.figma.com/design/mVOKIb950a3duJRAH3sLNO/Web-Design---Development?node-id=186-6816&t=PUu0iLmw8D2matFE-4
+
+
+Implement this design from Figma. https://www.figma.com/design/mVOKIb950a3duJRAH3sLNO/Web-Design---Development?node-id=186-6816&t=PUu0iLmw8D2matFE-4
+
+Add the new component called "FRONTIER": in 
+render-page-modules.php as new case. Also make the new php 
+file for it. Add the nessecary fields in the acf json file (+ update 
+the timestamp so it can sync in wordpress). dont implement a new 
+font for it - fall back to the already existing fonts. 

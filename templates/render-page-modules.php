@@ -20,6 +20,11 @@ while (have_rows('page_modules')) : the_row();
     'show_on'    => get_sub_field('show-on') ?: 'everywhere',
   ];
 
+  if (in_array(get_row_layout(), ['header', 'frontier'], true)) {
+    $opts['container'] = 'none';
+    $opts['padding_y'] = '0';
+  }
+
   // Öffne Section-Hülle nur, wenn Helper existieren – sonst simple Wrapper
   if (function_exists('section_open')) {
     section_open($opts);
@@ -33,6 +38,12 @@ while (have_rows('page_modules')) : the_row();
   }
 
   switch (get_row_layout()) {
+    case 'header':
+      get_template_part('template-parts/flex/layout', 'header'); break;
+
+    case 'frontier':
+      get_template_part('template-parts/flex/layout', 'frontier'); break;
+
     case 'intro':
       get_template_part('template-parts/flex/layout', 'intro'); break;
 
@@ -77,6 +88,9 @@ while (have_rows('page_modules')) : the_row();
 
     case 'google_map':
       get_template_part('template-parts/flex/layout', 'google-map'); break;
+
+      case 'project_highlight':
+      get_template_part('template-parts/flex/layout', 'project-highlight'); break;
   }
 
   if (function_exists('section_close')) {
