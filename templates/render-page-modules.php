@@ -20,7 +20,7 @@ while (have_rows('page_modules')) : the_row();
     'show_on'    => get_sub_field('show-on') ?: 'everywhere',
   ];
 
-  if (in_array(get_row_layout(), ['header', 'frontier'], true)) {
+  if (in_array(get_row_layout(), ['header', 'frontier', 'banner'], true)) {
     $opts['container'] = 'none';
     $opts['padding_y'] = '0';
   }
@@ -40,6 +40,12 @@ while (have_rows('page_modules')) : the_row();
   switch (get_row_layout()) {
     case 'header':
       get_template_part('template-parts/flex/layout', 'header'); break;
+
+    case 'banner':
+      get_template_part('template-parts/flex/layout', 'banner'); break;
+
+    case 'options':
+      get_template_part('template-parts/flex/layout', 'options'); break;
 
     case 'frontier':
       get_template_part('template-parts/flex/layout', 'frontier'); break;

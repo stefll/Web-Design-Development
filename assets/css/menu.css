@@ -17,6 +17,31 @@
   gap: 20px;
 }
 
+.page-header__menu {
+  gap: 0;
+}
+
+.page-header__menu .main-menu-container,
+.page-header__menu .main-menu {
+  display: contents;
+}
+
+.page-header__menu .main-menu li {
+  display: flex;
+  width: clamp(7.5rem, 10vw, 10rem);
+  align-items: center;
+  justify-content: center;
+}
+
+.page-header__menu .main-menu li a {
+  display: flex;
+  width: 100%;
+  min-height: 2.25rem;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--theme-font-raleway);
+}
+
 #site-navigation .main-menu li a:hover,
 #menu-footer li a:hover {
   color: var(--theme-color-primary);

@@ -53,39 +53,14 @@
                     "display": "block",
                     "sub_fields": [
                         {
-                            "key": "field_header_eyebrow",
-                            "label": "Eyebrow",
-                            "name": "eyebrow",
-                            "aria-label": "",
-                            "type": "text",
-                            "instructions": "",
-                            "required": false,
-                            "conditional_logic": false,
-                            "wrapper": {
-                                "width": "",
-                                "class": "",
-                                "id": ""
-                            },
-                            "default_value": "",
-                            "maxlength": "",
-                            "placeholder": "",
-                            "prepend": "",
-                            "append": ""
-                        },
-                        {
                             "key": "field_header_marquee_text",
                             "label": "Marquee-Text",
                             "name": "marquee_text",
-                            "aria-label": "",
                             "type": "text",
                             "instructions": "Text, der horizontal hinter dem zentralen Titel durchläuft.",
                             "required": false,
                             "conditional_logic": false,
-                            "wrapper": {
-                                "width": "",
-                                "class": "",
-                                "id": ""
-                            },
+                            "wrapper": {"width": "", "class": "", "id": ""},
                             "default_value": "A DINNER WORTH DYING FOR",
                             "maxlength": "",
                             "placeholder": "",
@@ -93,100 +68,13 @@
                             "append": ""
                         },
                         {
-                            "key": "field_header_left_image",
-                            "label": "Linkes Bild",
-                            "name": "left_image",
-                            "aria-label": "",
-                            "type": "image",
-                            "instructions": "",
-                            "required": false,
-                            "conditional_logic": false,
-                            "wrapper": {
-                                "width": "",
-                                "class": "",
-                                "id": ""
-                            },
-                            "return_format": "id",
-                            "preview_size": "medium",
-                            "library": "all",
-                            "min_width": 0,
-                            "min_height": 0,
-                            "min_size": 0,
-                            "max_width": 0,
-                            "max_height": 0,
-                            "max_size": 0,
-                            "mime_types": "",
-                            "uploader": "",
-                            "acfe_thumbnail": 0
-                        },
-                        {
-                            "key": "field_header_center_image",
-                            "label": "Mittleres Bild",
-                            "name": "center_image",
-                            "aria-label": "",
-                            "type": "image",
-                            "instructions": "",
-                            "required": false,
-                            "conditional_logic": false,
-                            "wrapper": {
-                                "width": "",
-                                "class": "",
-                                "id": ""
-                            },
-                            "return_format": "id",
-                            "preview_size": "medium",
-                            "library": "all",
-                            "min_width": 0,
-                            "min_height": 0,
-                            "min_size": 0,
-                            "max_width": 0,
-                            "max_height": 0,
-                            "max_size": 0,
-                            "mime_types": "",
-                            "uploader": "",
-                            "acfe_thumbnail": 0
-                        },
-                        {
-                            "key": "field_header_right_image",
-                            "label": "Rechtes Bild",
-                            "name": "right_image",
-                            "aria-label": "",
-                            "type": "image",
-                            "instructions": "",
-                            "required": false,
-                            "conditional_logic": false,
-                            "wrapper": {
-                                "width": "",
-                                "class": "",
-                                "id": ""
-                            },
-                            "return_format": "id",
-                            "preview_size": "medium",
-                            "library": "all",
-                            "min_width": 0,
-                            "min_height": 0,
-                            "min_size": 0,
-                            "max_width": 0,
-                            "max_height": 0,
-                            "max_size": 0,
-                            "mime_types": "",
-                            "uploader": "",
-                            "acfe_thumbnail": 0
-                        },
-                        {
                             "key": "field_header_title",
                             "label": "Titel",
                             "name": "title",
-                            "aria-label": "",
                             "type": "text",
-                            "instructions": "",
                             "required": false,
                             "conditional_logic": false,
-                            "wrapper": {
-                                "width": "",
-                                "class": "",
-                                "id": ""
-                            },
+                            "wrapper": {"width": "", "class": "", "id": ""},
                             "default_value": "OCCHIO FATALE",
                             "maxlength": "",
                             "placeholder": "",
@@ -194,9 +82,109 @@
                             "append": ""
                         },
                         {
-                            "key": "field_header_tagline",
-                            "label": "Tagline",
-                            "name": "tagline",
+                            "key": "field_header_dinner_link",
+                            "label": "Dinner-Link",
+                            "name": "dinner_link",
+                            "type": "link",
+                            "return_format": "array"
+                        },
+                        {
+                            "key": "field_header_menu_link",
+                            "label": "Menü-Link",
+                            "name": "menu_link",
+                            "type": "link",
+                            "return_format": "array"
+                        },
+                        {
+                            "key": "field_header_booking_link",
+                            "label": "Booking-Link",
+                            "name": "booking_link",
+                            "type": "link",
+                            "return_format": "array"
+                        }
+                    ],
+                    "acfe_flexible_category": [
+                        "Interaktive Elemente"
+                    ],
+                    "acfe_flexible_render_template": false,
+                    "acfe_flexible_render_style": false,
+                    "acfe_flexible_render_script": false
+                },
+                "layout_banner": {
+                    "key": "layout_banner",
+                    "name": "banner",
+                    "label": "BANNER",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_banner_text",
+                            "label": "Text",
+                            "name": "text",
+                            "aria-label": "",
+                            "type": "text",
+                            "instructions": "Text in der Bannerzeile.",
+                            "required": false,
+                            "conditional_logic": false,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "Your table. Your friends. One murder. Everyone has a secret.",
+                            "maxlength": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": ""
+                        },
+                        {
+                            "key": "field_banner_image",
+                            "label": "Illustration rechts",
+                            "name": "image",
+                            "aria-label": "",
+                            "type": "image",
+                            "instructions": "Transparente Illustration, rechts in der Bannerzeile.",
+                            "required": false,
+                            "conditional_logic": false,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "return_format": "id",
+                            "preview_size": "medium",
+                            "library": "all",
+                            "min_width": 0,
+                            "min_height": 0,
+                            "min_size": 0,
+                            "max_width": 0,
+                            "max_height": 0,
+                            "max_size": 0,
+                            "mime_types": "",
+                            "uploader": "",
+                            "acfe_thumbnail": 0
+                        }
+                    ],
+                    "min": "",
+                    "max": "",
+                    "acfe_flexible_category": "",
+                    "acfe_flexible_render_template": false,
+                    "acfe_flexible_render_style": false,
+                    "acfe_flexible_render_script": false,
+                    "acfe_flexible_thumbnail": false,
+                    "acfe_flexible_settings": false,
+                    "acfe_flexible_settings_size": false,
+                    "acfe_flexible_modal_edit_size": false
+                },
+                "layout_options": {
+                    "key": "layout_options",
+                    "name": "options",
+                    "label": "OPTIONS",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_options_headline",
+                            "label": "Überschrift",
+                            "name": "headline",
                             "aria-label": "",
                             "type": "text",
                             "instructions": "",
@@ -207,82 +195,71 @@
                                 "class": "",
                                 "id": ""
                             },
-                            "default_value": "",
+                            "default_value": "Choose one of many dinners",
                             "maxlength": "",
                             "placeholder": "",
                             "prepend": "",
                             "append": ""
                         },
                         {
-                            "key": "field_header_catering_link",
-                            "label": "Catering-Button",
-                            "name": "catering_link",
+                            "key": "field_options_options",
+                            "label": "Dinner-Optionen",
+                            "name": "options",
                             "aria-label": "",
-                            "type": "link",
-                            "instructions": "Link und Buttontitel für den Catering-Button.",
-                            "required": false,
-                            "conditional_logic": false,
-                            "wrapper": {
-                                "width": "50",
-                                "class": "",
-                                "id": ""
-                            },
-                            "return_format": "array"
-                        },
-                        {
-                            "key": "field_header_menu_link",
-                            "label": "Menü-Button",
-                            "name": "menu_link",
-                            "aria-label": "",
-                            "type": "link",
-                            "instructions": "Link und Buttontitel für den Menü-Button.",
-                            "required": false,
-                            "conditional_logic": false,
-                            "wrapper": {
-                                "width": "50",
-                                "class": "",
-                                "id": ""
-                            },
-                            "return_format": "array"
-                        },
-                        {
-                            "key": "field_header_dinner_link",
-                            "label": "Dinner-Link",
-                            "name": "dinner_link",
-                            "aria-label": "",
-                            "type": "link",
+                            "type": "repeater",
                             "instructions": "",
                             "required": false,
                             "conditional_logic": false,
                             "wrapper": {
-                                "width": "33",
+                                "width": "",
                                 "class": "",
                                 "id": ""
                             },
-                            "return_format": "array"
-                        },
-                        {
-                            "key": "field_header_booking_link",
-                            "label": "Booking-Link",
-                            "name": "booking_link",
-                            "aria-label": "",
-                            "type": "link",
-                            "instructions": "",
-                            "required": false,
-                            "conditional_logic": false,
-                            "wrapper": {
-                                "width": "33",
-                                "class": "",
-                                "id": ""
-                            },
-                            "return_format": "array"
+                            "layout": "block",
+                            "button_label": "Option hinzufügen",
+                            "sub_fields": [
+                                {
+                                    "key": "field_options_image",
+                                    "label": "Bild",
+                                    "name": "image",
+                                    "type": "image",
+                                    "return_format": "id",
+                                    "preview_size": "medium",
+                                    "library": "all"
+                                },
+                                {
+                                    "key": "field_options_title",
+                                    "label": "Titel",
+                                    "name": "title",
+                                    "type": "text"
+                                },
+                                {
+                                    "key": "field_options_text",
+                                    "label": "Text",
+                                    "name": "text",
+                                    "type": "textarea",
+                                    "rows": 4,
+                                    "new_lines": ""
+                                },
+                                {
+                                    "key": "field_options_price",
+                                    "label": "Preis",
+                                    "name": "price",
+                                    "type": "text"
+                                },
+                                {
+                                    "key": "field_options_link",
+                                    "label": "Link",
+                                    "name": "link",
+                                    "type": "link",
+                                    "return_format": "array"
+                                }
+                            ]
                         }
                     ],
                     "min": "",
                     "max": "",
-                    "acfe_flexible_category": [
-                        "Interaktive Elemente"
-                    ],
+                    "acfe_flexible_category": "",
                     "acfe_flexible_render_template": false,
                     "acfe_flexible_render_style": false,
                     "acfe_flexible_render_script": false,
@@ -1874,5 +1851,5 @@
             "json"
         ]
     },
-    "modified": 1795007207
+    "modified": 1795515949
 }

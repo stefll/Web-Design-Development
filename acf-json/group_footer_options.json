@@ -1,0 +1,107 @@
+{
+    "key": "group_footer_options",
+    "title": "Footer",
+    "fields": [
+        {
+            "key": "field_footer_title",
+            "label": "Titel",
+            "name": "footer_title",
+            "type": "text",
+            "default_value": "OCCHIO FATALE"
+        },
+        {
+            "key": "field_footer_background",
+            "label": "Hintergrundfarbe",
+            "name": "footer_background",
+            "type": "text",
+            "default_value": "#AB1F22"
+        },
+        {
+            "key": "field_footer_description",
+            "label": "Beschreibung",
+            "name": "footer_description",
+            "type": "textarea",
+            "default_value": "Behind every perfect evening hides a secret.",
+            "new_lines": ""
+        },
+        {
+            "key": "field_footer_address",
+            "label": "Adresse",
+            "name": "footer_address",
+            "type": "textarea",
+            "default_value": "Hidden address 65\nFr. 12345",
+            "new_lines": ""
+        },
+        {
+            "key": "field_footer_email",
+            "label": "E-Mail",
+            "name": "footer_email",
+            "type": "email",
+            "default_value": "occhio@fatale.com"
+        },
+        {
+            "key": "field_footer_phone",
+            "label": "Telefon",
+            "name": "footer_phone",
+            "type": "text",
+            "default_value": "+49 1234 567 890"
+        },
+        {
+            "key": "field_footer_social",
+            "label": "Social Links",
+            "name": "footer_social",
+            "type": "repeater",
+            "layout": "table",
+            "sub_fields": [
+                {
+                    "key": "field_footer_social_label",
+                    "label": "Label",
+                    "name": "label",
+                    "type": "text"
+                },
+                {
+                    "key": "field_footer_social_link",
+                    "label": "Link",
+                    "name": "link",
+                    "type": "link",
+                    "return_format": "array"
+                }
+            ]
+        },
+        {
+            "key": "field_footer_navigation",
+            "label": "Footer-Navigation",
+            "name": "footer_navigation",
+            "type": "repeater",
+            "layout": "table",
+            "sub_fields": [
+                {
+                    "key": "field_footer_navigation_link",
+                    "label": "Link",
+                    "name": "link",
+                    "type": "link",
+                    "return_format": "array"
+                }
+            ]
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "options_page",
+                "operator": "==",
+                "value": "theme-footer"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": [],
+    "active": true,
+    "description": "",
+    "show_in_rest": 0,
+    "modified": 1795457881
+}

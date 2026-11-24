@@ -1,6 +1,5 @@
 <?php
 $marquee_text = get_sub_field('marquee_text') ?: 'A DINNER WORTH DYING FOR';
-$marquee_copy = implode(' || ', array_fill(0, 10, $marquee_text));
 $title = get_sub_field('title') ?: 'OCCHIO FATALE';
 $dinner_link = get_sub_field('dinner_link') ?: get_sub_field('catering_link');
 $menu_link = get_sub_field('menu_link');
@@ -10,8 +9,9 @@ $menu_items = [
   ['link' => $menu_link, 'fallback' => 'Menu'],
   ['link' => $booking_link, 'fallback' => 'Booking'],
 ];
+$marquee_copy = implode(' || ', array_fill(0, 10, $marquee_text));
 ?>
-<header class="page-header">
+<div class="page-header">
   <div class="page-header__marquee" aria-hidden="true">
     <div class="page-header__marquee-track">
       <?php for ($copy = 0; $copy < 2; $copy++): ?>
@@ -27,10 +27,7 @@ $menu_items = [
       <?php foreach ($menu_items as $menu_item): ?>
         <?php
         $link = $menu_item['link'];
-        if (!is_array($link) || empty($link['url'])) {
-          continue;
-        }
-
+        if (!is_array($link) || empty($link['url'])) continue;
         $target = !empty($link['target']) ? $link['target'] : '_self';
         $rel = $target === '_blank' ? 'noopener noreferrer' : '';
         $label = !empty($link['title']) ? $link['title'] : $menu_item['fallback'];
@@ -41,4 +38,4 @@ $menu_items = [
       <?php endforeach; ?>
     </nav>
   </div>
-</header>
+</div>

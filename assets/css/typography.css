@@ -127,3 +127,9 @@ a:active {
   line-height: 1.5;
   margin-bottom: 2rem;
 }
+
+.text-1col {
+  font-family: var(--theme-font-raleway);
+  font-weight: 600;
+  text-align: center;
+}

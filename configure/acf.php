@@ -32,6 +32,19 @@ function section_close(array $opts = []) {
     echo '</section>';
 }
 
+if ( function_exists( 'acf_add_options_page' ) ) {
+    acf_add_options_page(
+        array(
+            'page_title' => 'Footer',
+            'menu_title' => 'Footer',
+            'menu_slug'  => 'theme-footer',
+            'capability' => 'edit_theme_options',
+            'redirect'   => false,
+            'position'   => 60,
+        )
+    );
+}
+
 
 
 // Enable ACF Local JSON
