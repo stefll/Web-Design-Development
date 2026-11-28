@@ -10,6 +10,49 @@
             "default_value": "OCCHIO FATALE"
         },
         {
+            "key": "field_footer_ticker_text",
+            "label": "Ticker-Text",
+            "name": "footer_ticker_text",
+            "type": "text",
+            "default_value": "A DINNER WORTH DYING FOR"
+        },
+        {
+            "key": "field_footer_contact_heading",
+            "label": "Kontakt-Überschrift",
+            "name": "footer_contact_heading",
+            "type": "text",
+            "default_value": "Contact"
+        },
+        {
+            "key": "field_footer_questions_heading",
+            "label": "Q&A-Überschrift",
+            "name": "footer_questions_heading",
+            "type": "text",
+            "default_value": "Q&A"
+        },
+        {
+            "key": "field_footer_questions",
+            "label": "Q&A",
+            "name": "footer_questions",
+            "type": "repeater",
+            "layout": "table",
+            "button_label": "Frage hinzufügen",
+            "sub_fields": [
+                {
+                    "key": "field_footer_question",
+                    "label": "Frage",
+                    "name": "question",
+                    "type": "text"
+                },
+                {
+                    "key": "field_footer_answer",
+                    "label": "Antwort",
+                    "name": "answer",
+                    "type": "text"
+                }
+            ]
+        },
+        {
             "key": "field_footer_background",
             "label": "Hintergrundfarbe",
             "name": "footer_background",
@@ -103,5 +146,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1795457881
+    "modified": 1795880195
 }

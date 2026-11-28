@@ -27,12 +27,12 @@ file for it. Add the nessecary fields in the acf json file (+ update
 the timestamp so it can sync in wordpress). dont implement a new 
 font for it - fall back to the already existing fonts.
 
-Implement this design from Figma.  https://www.figma.com/design/mVOKIb950a3duJRAH3sLNO/Web-Design---Development?node-id=186-6816&t=AuperCFypyB9bG5W-4
+Implement this design from Figma. https://www.figma.com/design/mVOKIb950a3duJRAH3sLNO/Web-Design---Development?node-id=228-17918&t=4kJZCgm7BAnE6V9P-4
 Add the new component called "FOOTER": in 
 render-page-modules.php as new case. Also make the new php 
 file for it. Add the nessecary fields in the acf json file (+ update 
 the timestamp so it can sync in wordpress). dont implement a new 
-font for it - fall back to the already existing fonts. But actually dont make it a component but as the actual footer of the page 
+font for it - fall back to the already existing fonts. But actually dont make it a component but as the actual footer of the page. The Layer "BANNER" is a marquee which is also part of the footer can u please do that?
  
 
 Implement this design from Figma. https://www.figma.com/design/mVOKIb950a3duJRAH3sLNO/Web-Design---Development?node-id=186-6816&t=AuperCFypyB9bG5W-4

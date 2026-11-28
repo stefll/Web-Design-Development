@@ -1,4 +1,5 @@
 import './menu.js';
+import './footer.js';
 
 class General {
 	constructor() {
